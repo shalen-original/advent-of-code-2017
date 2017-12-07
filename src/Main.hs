@@ -1,6 +1,8 @@
 import System.Environment
 
+import System.IO
 import qualified Day1 as D1
+import qualified Day2 as D2
  
 {-
     List of the various modules. Keys are assumed to be
@@ -8,7 +10,8 @@ import qualified Day1 as D1
 -}
 modules = [
         ("0", "Exit", putStrLn "\nBye!"),
-        ("1", "Day 1 - Inverse Captcha", D1.run)
+        ("1", "Day 1 - Inverse Captcha", D1.run),
+        ("2", "Day 2 - Corruption Checksum", D2.run)
     ]
 
 {-
@@ -33,10 +36,11 @@ main = do
 
     putStrLn "The following problems are available:" 
     putStrLn $ printProblems
-    putStrLn "\nWhat do you want to run: "
+    putStr "What do you want to run: "
+    hFlush stdout
     choice <- getChar
     getLine -- To clear the buffer
 
-    putStrLn "\n\n"
+    putStrLn ""
     runProblems [choice]
 
