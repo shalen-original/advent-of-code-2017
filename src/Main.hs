@@ -6,6 +6,7 @@ import qualified Day2 as D2
 import qualified Day3 as D3
 import qualified Day4 as D4
 import qualified Day5 as D5
+import qualified Day6 as D6
  
 {-
     List of the various modules. Keys are assumed to be
@@ -17,7 +18,8 @@ modules = [
         ("2", "Day 2 - Corruption Checksum", D2.run),
         ("3", "Day 3 - Spiral Memory", D3.run),
         ("4", "Day 4 - High-Entropy Passphrases", D4.run),
-        ("5", "Day 5 - A Maze of Twisty Trampolines, All Alike", D5.run)
+        ("5", "Day 5 - A Maze of Twisty Trampolines, All Alike", D5.run),
+        ("6", "Day 6 - Memory Reallocation", D6.run)
     ]
 
 {-
