@@ -3,6 +3,7 @@ import System.Environment
 import System.IO
 import qualified Day1 as D1
 import qualified Day2 as D2
+import qualified Day3 as D3
  
 {-
     List of the various modules. Keys are assumed to be
@@ -11,7 +12,8 @@ import qualified Day2 as D2
 modules = [
         ("0", "Exit", putStrLn "\nBye!"),
         ("1", "Day 1 - Inverse Captcha", D1.run),
-        ("2", "Day 2 - Corruption Checksum", D2.run)
+        ("2", "Day 2 - Corruption Checksum", D2.run),
+        ("3", "Day 3 - Spiral Memory", D3.run)
     ]
 
 {-
